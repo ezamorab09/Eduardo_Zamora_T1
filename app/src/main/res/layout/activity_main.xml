@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+
+    <ImageView
+        android:id="@+id/ivlogo"
+        android:layout_width="170dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restaurante_taller1_logo" />
+
+    <ImageView
+        android:id="@+id/ivPastelDeChoclo"
+        android:layout_width="122dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivlogo"
+        app:srcCompat="@drawable/pastel_de_choclo" />
+
+    <ImageView
+        android:id="@+id/ivCazuela"
+        android:layout_width="113dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toStartOf="@+id/ivPastelDeChoclo"
+        app:layout_constraintTop_toBottomOf="@+id/ivPastelDeChoclo"
+        app:srcCompat="@drawable/cazuela_chilena" />
+
+    <TextView
+        android:id="@+id/tvPastel_de_choclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/Pastel_de_choclo"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPastelDeChoclo"
+        app:layout_constraintTop_toTopOf="@+id/ivPastelDeChoclo" />
+
+    <TextView
+        android:id="@+id/tvCazuela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/Cazuela"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCazuela"
+        app:layout_constraintTop_toTopOf="@+id/ivCazuela" />
+
+    <TextView
+        android:id="@+id/tvTotalPedido"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/TotalPedido"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/ivCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/ivCazuela" />
+
+    <TextView
+        android:id="@+id/tvCant1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Cant1"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/tvPastel_de_choclo"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastel_de_choclo" />
+
+    <TextView
+        android:id="@+id/tvCant2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Cant2"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCazuela"
+        app:layout_constraintTop_toBottomOf="@+id/tvCazuela" />
+
+
+
+    <TextView
+        android:id="@+id/tvTotalVenta"
+        android:layout_width="105dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/TotalVenta"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/switchPropina"
+        app:layout_constraintTop_toBottomOf="@+id/switchPropina" />
+
+    <Switch
+        android:id="@+id/switchPropina"
+        android:layout_width="104dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:text="Propina"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalPedido"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalPedido" />
+
+    <EditText
+        android:id="@+id/etPropina"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/Propina"
+        android:inputType="numberDecimal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/etTotalPedido"
+        app:layout_constraintTop_toBottomOf="@+id/etTotalPedido" />
+
+    <EditText
+        android:id="@+id/etTotalPedido"
+        android:layout_width="123dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/TotalPedido"
+        android:inputType="numberDecimal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/tvTotalPedido"
+        app:layout_constraintTop_toBottomOf="@+id/etVentaCazuela" />
+
+
+    <EditText
+        android:id="@+id/etTotalVenta"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/TotalVenta"
+        android:inputType="numberDecimal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/etPropina"
+        app:layout_constraintTop_toBottomOf="@+id/etPropina" />
+
+
+    <EditText
+        android:id="@+id/etVentaPastelDeChoclo"
+        android:layout_width="117dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/Pastel_de_choclo"
+        android:inputType="numberDecimal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCant1"
+        app:layout_constraintTop_toBottomOf="@+id/tvCant1" />
+
+    <EditText
+        android:id="@+id/etVentaCazuela"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/VentaCazuela"
+        android:inputType="numberDecimal"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/tvCant2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCant2" />
+
+
+    <EditText
+        android:id="@+id/etCan2"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Cant2"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCant2"
+        app:layout_constraintTop_toBottomOf="@+id/tvCazuela" />
+
+    <EditText
+        android:id="@+id/etCant1"
+        android:layout_width="84dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/Cant1"
+        android:inputType="number"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/tvCant1"
+        app:layout_constraintTop_toBottomOf="@+id/tvPastel_de_choclo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

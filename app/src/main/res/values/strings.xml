@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Eduardo_Zamora_T1</string>
+    <string name="Pastel_de_choclo">Pastel de Choclo</string>
+    <string name="Cazuela">Cazuela Chilena</string>
+    <string name="Cant1">Cant</string>
+    <string name="Cant2">Cant</string>
+    <string name="TotalPedido">Total Pedido</string>
+    <string name="Propina">Propina</string>
+    <string name="TotalVenta">Total Venta</string>
+    <string name="VentaCazuela">Venta Cazuela</string>
+    <string name="VentaPastelDeChoclo">Venta Pastel de Choclo</string>
+
+
+</resources>
+
+
+
+
+
